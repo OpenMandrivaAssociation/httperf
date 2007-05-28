@@ -8,7 +8,6 @@ Group: Utilities
 Group(es): Utilitarios
 Group(pt_BR): Utilitários
 License: GPL
-BuildArch:i386
 Source: %{name}-%{version}.tar.gz
 BuildRequires: openssl-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
