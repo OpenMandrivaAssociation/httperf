@@ -1,7 +1,7 @@
 
 Name: httperf
 Version: 0.8
-Release: 11845cl
+Release: %mkrel 1
 Summary: It is a popular web server benchmark
 Summary(pt_BR): Popular avaliador de servidores web
 Group: Utilities
@@ -10,8 +10,6 @@ Group(pt_BR): Utilitários
 License: GPL
 BuildArch:i386
 Source: httperf-0.8.tar.gz
-#Source0: homologacao.tar.gz
-#Source1: homoclient.tar.gz
 BuildRequires: openssl-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 URL: http://freshmeat.net/redir/httperf/4215/url_homepage/
@@ -49,7 +47,6 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/%{_bindir}
 mkdir -p %{buildroot} 
 #mkdir -p %{buildroot}/%{_bindir}/httperf
-# Binários
 install -m744 httperf %{buildroot}/%{_bindir}/httperf
 
 %clean
