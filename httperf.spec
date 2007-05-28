@@ -1,6 +1,6 @@
 
 Name: httperf
-Version: 0.8
+Version: 0.9.0
 Release: %mkrel 1
 Summary: It is a popular web server benchmark
 Summary(pt_BR): Popular avaliador de servidores web
@@ -9,7 +9,7 @@ Group(es): Utilitarios
 Group(pt_BR): Utilitários
 License: GPL
 BuildArch:i386
-Source: httperf-0.8.tar.gz
+Source: %{name}-%{version}.tar.gz
 BuildRequires: openssl-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 URL: http://freshmeat.net/redir/httperf/4215/url_homepage/
@@ -40,18 +40,17 @@ testes de performance e geradores de carga de testes.
 
 %build
 %configure
-make
+%make
 
 %install 
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/%{_bindir}
-mkdir -p %{buildroot} 
-#mkdir -p %{buildroot}/%{_bindir}/httperf
-install -m744 httperf %{buildroot}/%{_bindir}/httperf
+%makeinstall
 
 %clean
 rm -rf %{buildroot}
 
 %files
 %defattr(0644,root,root,0755)
-%attr(0755,root,root) %{_bindir}/httperf
+%doc README NEWS ChangeLog AUTHORS TODO
+%attr(0755,root,root) %{_bindir}/*
+%{_mandir}/man?/*
