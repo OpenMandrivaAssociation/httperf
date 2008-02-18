@@ -2,7 +2,7 @@
 Name: httperf
 Version: 0.9.0
 Release: %mkrel 2
-Summary: It is a popular web server benchmark
+Summary: Popular web server benchmark
 Summary(pt_BR): Popular avaliador de servidores web
 Group: System/Base
 License: GPL
