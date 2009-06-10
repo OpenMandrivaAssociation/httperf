@@ -1,11 +1,11 @@
 
 Name: httperf
 Version: 0.9.0
-Release: %mkrel 5
+Release: %mkrel 6
 Summary: Popular web server benchmark
 Summary(pt_BR): Popular avaliador de servidores web
 Group: System/Base
-License: GPL
+License: GPLv2+
 Source: %{name}-%{version}.tar.gz
 BuildRequires: openssl-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
@@ -36,6 +36,7 @@ testes de performance e geradores de carga de testes.
 %setup -q
 
 %build
+autoreconf -f -i
 %configure
 %make
 
