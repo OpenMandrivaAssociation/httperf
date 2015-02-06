@@ -1,7 +1,7 @@
 
 Name: httperf
 Version: 0.9.0
-Release: %mkrel 7
+Release: 8
 Summary: Popular web server benchmark
 Summary(pt_BR): Popular avaliador de servidores web
 Group: System/Base
