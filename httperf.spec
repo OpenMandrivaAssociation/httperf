@@ -9,7 +9,7 @@ License: GPLv2+
 Source: %{name}-%{version}.tar.gz
 BuildRequires: openssl-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
-URL: http://freshmeat.net/redir/httperf/4215/url_homepage/
+URL: https://freshmeat.net/redir/httperf/4215/url_homepage/
 
 %description
 httperf is a popular web server benchmark tool for measuring web server
